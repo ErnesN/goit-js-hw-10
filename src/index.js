@@ -20,7 +20,7 @@ function onInputChange(e) {
   } else {
     fetchCountries(value.trim())
       .then(renderCardCountry)
-      .catch(error =>
+      .catch(_error =>
         Notiflix.Notify.failure('Oops, there is no country with that name')
       );
   }
